@@ -1,5 +1,6 @@
 #ifndef _zookeeperutil_h_
 #define _zookeeperutil_h_
+#define THREADED  // 强制取消定义 THREADED，确保同步函数声明可见
 
 #include<semaphore.h>
 #include<zookeeper/zookeeper.h>

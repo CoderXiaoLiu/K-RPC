@@ -11,7 +11,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)#CMAKE_CXX_STANDARD_REQUIRED表示强制使
 
 #查找porotbuf包
 find_package(Protobuf REQUIRED)
-include_directories(${Protobuf_INCLUDE_DIRS})#Protobuf_INCLUDE_DIRS表示protobuf头文件目录
+include_directories(${Protobuf_INCLUDE_DIRS} ${LIBZOO_INCLUDE_DIRS})#Protobuf_INCLUDE_DIRS表示protobuf头文件目录
 
 #设置全局链接库
 set(LIBS
